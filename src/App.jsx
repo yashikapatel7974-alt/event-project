@@ -11,6 +11,14 @@ import EmployeeForm from "./pages/EmployeeForm";
 import Departments from "./pages/Departments";
 import Skills from "./pages/Skills";
 
+import LeaveApplication from "./pages/LeaveApplication";
+import LeaveHistory from "./pages/LeaveHistory";
+import ManagerApproval from "./pages/ManagerApproval";
+import HRApproval from "./pages/HRApproval";
+
+
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -24,6 +32,10 @@ function App() {
         <Route path="/employee-create" element={<EmployeeForm />} />
         <Route path="/departments" element={<Departments />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/leave-application" element={<LeaveApplication />} />
+        <Route path="/leave-history" element={<LeaveHistory />} />
+        <Route path="/manager-approval" element={<ManagerApproval />} />
+        <Route path="/hr-approval" element={<HRApproval />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
