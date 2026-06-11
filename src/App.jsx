@@ -20,9 +20,11 @@ import Notifications from "./pages/Notifications";
 import AuditLogs from "./pages/AuditLogs";
 import Reports from "./pages/Reports";
 import Analytics from "./pages/Analytics";
-
-
-
+import SearchFilter from "./pages/SearchFilter";
+import ErrorLogs from "./pages/ErrorLogs";
+import HealthCheck from "./pages/HealthCheck";
+import TestingDashboard from "./pages/TestingDashboard";
+import DockerSetup from "./pages/DockerSetup";
 function App() {
   return (
     <BrowserRouter>
@@ -45,6 +47,11 @@ function App() {
         <Route path="/audit-logs" element={<AuditLogs />} />
         <Route path="/reports" element={<Reports />} />
         <Route path="/analytics" element={<Analytics />} />
+        <Route path="/search-filter" element={<SearchFilter />} />
+        <Route path="/error-logs" element={<ErrorLogs />} />
+        <Route path="/health-check" element={<HealthCheck />} />
+        <Route path="/testing-dashboard" element={<TestingDashboard />} />
+        <Route path="/docker-setup" element={<DockerSetup />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

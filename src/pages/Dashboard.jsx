@@ -44,7 +44,33 @@ function Dashboard() {
     <br /><br />
 
     <Link to="/analytics"><button>Analytics</button></Link>
+    <Link to="/search-filter">
+  <button>Search & Filter</button>
+</Link>
+
+<br /><br />
+<Link to="/error-logs">
+  <button>Error Logs</button>
+</Link>
+
+<br /><br />
+<Link to="/health-check">
+  <button>Health Check</button>
+</Link>
+
+<br /><br />
+<Link to="/testing-dashboard">
+  <button>Testing Dashboard</button>
+</Link>
+
+<br /><br />
+<Link to="/docker-setup">
+  <button>Docker Setup</button>
+</Link>
+
+<br /><br />
   </div>
+  
 );
 }
 
