@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+
 import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
@@ -25,12 +26,14 @@ import ErrorLogs from "./pages/ErrorLogs";
 import HealthCheck from "./pages/HealthCheck";
 import TestingDashboard from "./pages/TestingDashboard";
 import DockerSetup from "./pages/DockerSetup";
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
+
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/profile" element={<Profile />} />
 
@@ -38,15 +41,18 @@ function App() {
         <Route path="/employee-create" element={<EmployeeForm />} />
         <Route path="/departments" element={<Departments />} />
         <Route path="/skills" element={<Skills />} />
+
         <Route path="/leave-application" element={<LeaveApplication />} />
         <Route path="/leave-history" element={<LeaveHistory />} />
         <Route path="/manager-approval" element={<ManagerApproval />} />
         <Route path="/hr-approval" element={<HRApproval />} />
+
         <Route path="/assets" element={<AssetManagement />} />
         <Route path="/notifications" element={<Notifications />} />
         <Route path="/audit-logs" element={<AuditLogs />} />
         <Route path="/reports" element={<Reports />} />
         <Route path="/analytics" element={<Analytics />} />
+
         <Route path="/search-filter" element={<SearchFilter />} />
         <Route path="/error-logs" element={<ErrorLogs />} />
         <Route path="/health-check" element={<HealthCheck />} />
